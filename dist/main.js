@@ -9,8 +9,7 @@ hambuger.addEventListener("click", function () {
     hambugerdrop.style.display = "block";
   } else {
     hambuger.classList.remove("show");
-    if (hambugerdrop.style.display == "block") {
-      // if is menuBox displayed, hide it
+    if (hambugerdrop.style.display == "block") {     
       hambugerdrop.style.display = "none";
     }
   }
