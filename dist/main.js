@@ -1,16 +1,19 @@
 let hambuger = document.getElementById("hambuger");
 let hambugerdrop = document.getElementById("hambuger-drop");
-console.log(hambuger, hambugerdrop);
+let siteMenu = document.getElementById("site-menu");
 
 hambuger.addEventListener("click", function () {
-  //  hambuger.classList.toggle("show");
-  if (!hambuger.classList.contains("show")) {
-    hambuger.classList.add("show");
-    hambugerdrop.style.display = "block";
+ hambugerdrop.classList.toggle("block");
+ hambugerdrop.classList.toggle("hidden");
+});
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 200) {
+    // adjust this value based on site structure and header image height
+    siteMenu.classList.add("nav-sticky");
+    // header.classList.add("pt-scroll");
   } else {
-    hambuger.classList.remove("show");
-    if (hambugerdrop.style.display == "block") {     
-      hambugerdrop.style.display = "none";
-    }
+    siteMenu.classList.remove("nav-sticky");
+    // header.classList.remove("pt-scroll");
   }
 });

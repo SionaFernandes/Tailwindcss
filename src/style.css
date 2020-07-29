@@ -8,3 +8,23 @@
 .btn__default:hover {
   @apply bg-blue-700;
 }
+.nav-sticky {
+  position: fixed !important;
+  min-width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+  z-index: 1;
+}
+html {
+  @apply h-full m-0 p-0;
+}
+body {
+  @apply relative min-h-full;
+}
+main {
+  @apply pb-20;
+}
+footer {
+  @apply absolute bottom-0 h-20 ;
+}
