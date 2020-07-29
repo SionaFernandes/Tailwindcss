@@ -23,8 +23,8 @@ body {
   @apply relative min-h-full;
 }
 main {
-  @apply pb-20;
+  @apply pb-32;
 }
 footer {
-  @apply absolute bottom-0 h-20 ;
+  @apply absolute bottom-0 h-20;
 }

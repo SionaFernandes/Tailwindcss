@@ -49,15 +49,16 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section id="grid" class="py-10">
+    <main class="pt-10">
+        <section id="grid">
             <div class="container">
                 <h1 class="text-3xl text-center">Tailwind CSS Grid</h1>
                 <p class="tw-text-soft text-center">Offers grid structuring</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
                     <div>
                         <a href="#">
-                            <article class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end"
+                            <article
+                                class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end transition-shadow duration-300 ease-in-out hover:shadow-2xl"
                                 style="background-image:url('https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
                                 <div class="article-body">
                                     <h5>Category</h5>
@@ -68,7 +69,8 @@
                     </div>
                     <div>
                         <a href="#">
-                            <article class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end"
+                            <article
+                                class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end transition-shadow duration-300 ease-in-out hover:shadow-2xl"
                                 style="background-image:url('https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
                                 <div class="article-body">
                                     <h5>Category</h5>
@@ -79,7 +81,8 @@
                     </div>
                     <div>
                         <a href="#">
-                            <article class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end"
+                            <article
+                                class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end transition-shadow duration-300 ease-in-out hover:shadow-2xl"
                                 style="background-image:url('https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
                                 <div class="article-body">
                                     <h5>Category</h5>
@@ -90,7 +93,8 @@
                     </div>
                     <div>
                         <a href="#">
-                            <article class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end"
+                            <article
+                                class="bg-cover bg-no-repeat h-64 px-3 pb-3 flex items-end transition-shadow duration-300 ease-in-out hover:shadow-2xl"
                                 style="background-image:url('https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
                                 <div class="article-body">
                                     <h5>Category</h5>
@@ -99,6 +103,26 @@
                             </article>
                         </a>
                     </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="my-10">
+            <div class="container">
+                <h2 class="text-2xl">Nested grid</h2>
+                <div class="grid  lg:grid-cols-2 gap-4">
+                    <div class="bg-blue-500 p-3">outer grid 1
+                        <div class="grid lg:grid-cols-3 gap-4">
+                            <div class="bg-green-500 p-3">inner grid 1</div>
+                            <div class="bg-green-500 p-3">inner grid 2</div>
+                            <div class="bg-green-500 p-3">inner grid 3</div>
+                            <div class="bg-green-500 p-3">inner grid 4</div>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-blue-500 p-3">outer grid 2</div>
                 </div>
             </div>
         </section>
